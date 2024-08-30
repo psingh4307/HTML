@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction() {
+            document.getElementById("paragraph").
+                innerHTML = "paragraph changed"
+        }
+    </script>
+</head>
+
+<body>
+    <h2> JavaScript in body </h2>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").
+            innerHTML = "My First JavaScript";
+
+    </script>
+    <h2>
+        demo javascript in head
+    </h2>
+    <p id="paragraph">
+        a paragraph.
+        </p>
+        <button type="button" onclick="myfunction()">
+            try it
+        </button>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- change content -->
+
+<body>
+    <h2> what can javascript do?</h2>
+    <p id="demo"> JavaScript can change HTML content.</p>
+    <button type="button" onclick="document.getElementById('demo') . innerHTML='Hello JavaScript!'"> click me !
+
+    </button>
+    <!-- change html attribute-->
+    <p>JavaScript can change HTML attribute values .</p>
+    <p>In this case javascript change the values of source attribute of an image .</p>
+    <button onclick="document.getElementById('my image').
+    src='on_image.jpeg'">
+        Turn on the light
+    </button>
+    <img id="my image" src="Clear_light_bulb.jpg.crdownload" style="width: 100px;">
+    <button onclick="document.getElementById('my image').src='clear_light_bulb.jpg.crdownload'">
+        Turn off the light</button>
+    <!-- change html style -->
+    <p id="fontSize"> JavaScript can change the
+        style of an html element.</p>
+    <button type="button" onclick="document.getElementById('fontSize').style.fontSize='35px'">
+        click me!
+    </button>
+    <!-- hide html element -->
+    <p id="element"> javascript can hide html element</p>
+    <button type="button " onclick="document.getElementById('element').
+ style.display='none'">
+        click me!</button>
+    <!-- show html element -->
+    <p> javascript can show hidden html element.</p>
+    <p id="showelement" style="display: none;">
+        hello javascript!
+    </p>
+    <button type="button" onclick="document.getElementById
+ ('showelement'). style.display='block'">
+        click me !
+    </button>
+</body>
+
+</html>
