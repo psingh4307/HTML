@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> redeclaring a variable using var</h2>
+    <p id="demo"></p>
+    <script>
+        var x = 10;
+        {
+            var x = 2;
+        }
+        document.getElementById("demo").innerHTML
+            = x;
+
+    </script>
+    <p>
+        redeclaring a javascript variable with <b>
+            var </b> is allowed anywhere in a program:
+    </p>
+    <p id="redeclaring"></p>
+    <script>
+        var x = 2;
+        var x = 3;
+        document.getElementById("redeclaring").innerHTML =
+            x;
+    </script>
+    <p>
+        redeclaring a variable with <b> let</b>,
+        in another scope, or in another block.is allowed
+    </p>
+    <p id="allowed"></p>
+    <script>
+        let x = 5;
+        {
+            let x = 3;
+        }
+        {
+            let x = 4;
+        }
+        document.getElementById("allowed").innerHTML = x;
+    </script>
+</body>
+
+</html>
